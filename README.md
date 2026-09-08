@@ -88,12 +88,6 @@ After setup the app is RUNNING but shows an onboarding overlay, because no model
 
 **Minor.** App names are `agent-<userslug>` truncated to 30 chars and catalogs use `labuser_<user>` truncated to 19; in a shared workspace two similar usernames can collide. Setup pins `databricks-sdk==0.123.0` over the serverless built-in.
 
-## Deploying with or for a customer
-
-- This repo is **private** by license. To let a customer clone it, add them as a collaborator on this repo rather than making it public. Alternatively, import the folder into their workspace for them (`databricks workspace import-dir . /Workspace/Users/<them>/genai-unity-gateway`).
-- Walk the [prerequisites table](#requirements--prerequisites) with them first, especially the **Beta previews** (need their account admin) and **Serverless env v5**, since those have the longest lead time.
-- Run the preflight cell together before setup.
-
 ## Contents
 This repository includes:
 - **01 Lecture - Unity Gateway Basics** notebook
