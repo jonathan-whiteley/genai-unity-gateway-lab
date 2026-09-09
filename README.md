@@ -24,11 +24,9 @@ Check these before you start. The demo notebook opens with a **preflight cell** 
 
 | Requirement | Why it matters | How to check |
 |---|---|---|
-| Unity Catalog-enabled workspace | The lab creates a catalog, schema, and governed assets | Catalog explorer is available in the workspace |
 | **Serverless notebooks, environment version 5** | Setup runs only on this version | Environment side panel shows version `5` |
 | A catalog you can write to | Setup creates the lab schema in it | You can create a schema (see Troubleshooting if catalog creation fails) |
 | Foundation Model endpoints (Claude / GPT) | The gateway routes traffic to these | `databricks serving-endpoints list` shows `databricks-claude-*` / `databricks-gpt-*` |
-| Databricks Apps enabled + create permission | Setup deploys the agent app | You can create an app in the workspace |
 | **Beta preview: Service policies** | Required for the guardrail step | Enabled under Previews (account admin) |
 | **Beta preview: Managed MLflow Prompt Registry** | Powers the "My Agent" prompt panel | Enabled under Previews (account admin) |
 
@@ -74,4 +72,4 @@ Check these before you start. The demo notebook opens with a **preflight cell** 
 
 ---
 
-<sub>Original content by the **Databricks Curriculum Development Team**. Confidential: for internal use in individual customer engagements; keep this repository private. This is a hardened copy of the source lab with added deploy-robustness fixes (Default-Storage-safe catalog creation, a clearer serverless-version check, an exact grant hint, and a preflight prerequisite check) and expanded prerequisites and troubleshooting docs. Teaching flow, agent app, and gateway steps are unchanged from the original.</sub>
+<sub>Original content by the **Databricks Curriculum Development Team**.</sub>
